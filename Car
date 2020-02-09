@@ -1,0 +1,20 @@
+package com.company;
+
+public class Car extends Vehicle {
+    int numberOfDoors;
+    String motorType = "";
+    public Car(){
+
+    }
+    public Car(int doors, String motor){
+        numberOfDoors = doors;//assigns values
+        motorType = motor;
+    }
+    public void communicate(){
+        System.out.println("Honk honk!");
+    }//end communicate()
+    public String toString(){
+        String rv = "This is a " + motorType + " car with " + numberOfDoors + " doors.";
+        return rv;
+    }//end toString()
+}
