@@ -1,0 +1,19 @@
+package com.company;
+
+public class Train extends Vehicle{
+    int numberOfBoxcars;
+    public Train(){
+
+    }
+    public Train(int boxcars){
+        numberOfBoxcars = boxcars;//assigns values
+    }
+    public void commuincation(){
+        System.out.println("I think I can, I think I can!");
+    }//end communicate()
+    public String toString(){
+        String rv = "This is a train, all aboard!";
+        return rv;
+    }//end toString()
+}
+
