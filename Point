@@ -1,0 +1,24 @@
+package com.company;
+
+public class Point {
+    double x;
+    double y;
+    public Point(){
+
+    }
+    public Point(double xValue, double yValue){
+        x = xValue;//assigns values
+        y = yValue;
+    }
+    // Returns "(1,2)"
+    public String toString(){
+        String rv = "(" + x + "," + y + ")";//String form of a point
+        return rv;
+    }//end toString()
+    // Returns distance between this point and p.
+    public double distance(Point p){
+        double rv = Math.sqrt(Math.pow(p.x - x, 2) + Math.pow(p.y - y, 2));//distance formula
+        return rv;//distance formula
+    }//end distance()
+}
+
