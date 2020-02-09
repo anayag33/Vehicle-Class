@@ -1,0 +1,46 @@
+package com.company;
+
+public class Vehicle {
+    int numberOfSeats;
+    int numberOfPassengers;
+    Point currentPosition;
+    Point destination;
+    int speed;
+    public Vehicle(){
+
+    }
+    public Vehicle(int seats, int passengers, Point current, Point des, int s){
+        numberOfSeats = seats;//assigns values
+        numberOfPassengers = passengers;
+        currentPosition = current;
+        destination = des;
+        speed = s;
+    }
+    public void communicate(){
+        System.out.println("Hey you!");
+    }//end communicate()
+    public String toString(){
+        String rv = "This is a vehicle";
+        return rv;
+    }//end toString()
+    public int speedCompareTo(Vehicle v){
+        int rv = speed - v.speed;
+        return rv;
+    }//end speedCompareTo()
+    public int speedCompareTo(Airplane a){
+        int rv = speed - a.speed;
+        return rv;
+    }//end speedCompareTo()
+    public int speedCompareTo(Car c){
+        int rv = speed - c.speed;
+        return rv;
+    }//end speedCompareTo()
+    public int speedCompareTo(Train t){
+        int rv = speed - t.speed;
+        return rv;
+    }//end speedCompareTo()
+    public double distanceTo(Vehicle v){
+        double rv = currentPosition.distance(v.currentPosition);//calls distance function from Point
+        return rv;
+    }//end speedCompareTo()
+}
