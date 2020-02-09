@@ -1,0 +1,19 @@
+package com.company;
+
+public class Airplane extends Vehicle{
+    String flightNumber = "";
+    public Airplane(){
+
+    }
+    public Airplane(String number){
+        flightNumber = number;//assigns values
+    }
+    public void communicate(){
+        System.out.println("Tower, this is flight " + flightNumber + ". Requesting permission to land.");
+    }//end communicate()
+    public String toString(){
+        String rv = "This is an airplane, flight number " + flightNumber + ".";
+        return rv;
+    }//end toString()
+}
+
